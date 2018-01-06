@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Battleship Game</h1>
+  </header>
+  
+  <main>
+    <div class="legend">
+      <table>
+        <tbody>
+          <tr>
+            <td class="yourShips"></td>
+            <td class="description">Your ships</td>
+          </tr>     
+         
+          <tr>
+            <td class="miss"></td>
+            <td class="description">Miss</td>
+          </tr>
+          
+          <tr>
+            <td class="hit"></td>
+            <td class="description">Hit</td>
+          </tr>
+          
+          <tr>
+            <td class="hide"></td>
+            <td class="description">Hide</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   
+    <div class="boardsContainer">
+      <div class="score scoreComputer">
+        
+        <p>Ships remain:</p>
+        <span class="computerRemain">20</span>
+      </div>
+      <table class="board boardComputer">
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="board boardPlayer">
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="score scorePlayer">
+        
+        <p>Ships remain:</p>
+        <span class="playerRemain">20</span>
+      </div>
+    </div>
+    
+    <div class="chatboxContainer">
+      <div class="chat">
+        <p>Welcome! To start the game you have to place ships on your board (at the bottom). Do it as you want - it's a war, there is no rules here. Remember, hovewer, that you have to place excatly 20 ships. When you done click "Start Game" button. Good luck.</p>
+        
+        <div class="count">20</div>
+        <button class="startGame" disabled>Start Game</button>
+      </div>
+    </div>
+  </main>
+  
+
+  
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
