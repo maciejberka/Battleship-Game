@@ -27,6 +27,31 @@ $(document).ready(function () {
     }
   }
 
+  //Event listener at .startGame button
+  $(".startGame").on("click", beginGame);
+  //function to random choosing cells at computer's board, removing children of .chat div and removing event listener at player's board
+  function beginGame(){
+    for (var i = 0; i < 20; i++){
+      //get randomNumber 0-99
+      var randomNumber = (Math.random() * 100);
+      //round randomNumber
+      randomNumber = Math.round(randomNumber);
+      //choose random cell
+      var randomCell = $(".boardComputer td").eq(randomNumber);
+      //if randomCell's index is less or equal 64 and cell wasn't already choosed...
+      if (randomNumber <= 64 && !randomCell.hasClass("computerShips")){
+        //accept randomCell as a computer choice  
+        randomCell.addClass("computerShips");
+      } else {
+          //else - repeat
+          i--;
+      }
+    }
+    //remove all elements from .chat div
+    $(".chat").empty();
+    //remove event listener at cells of player's board
+    $(".boardPlayer td").off();
+  }
 
 
 
