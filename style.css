@@ -74,6 +74,9 @@ main {
   background-color: green;
 }
 
+.computerShips {
+  background-color: white;
+}
 
 .boardsContainer {
   height: 90vh;
